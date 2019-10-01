@@ -8,3 +8,6 @@ class Restaurant(models.Model):
 	# closing_time = models.Charfield(max_length=105)
 	opening_time = models.TimeField(auto_now=False, auto_now_add=False)
 	closing_time = models.TimeField(auto_now=False, auto_now_add=False)
+
+	def __str__(self):
+		return self.name
